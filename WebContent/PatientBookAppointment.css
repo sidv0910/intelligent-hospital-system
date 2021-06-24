@@ -1,0 +1,41 @@
+.outside {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1520px;
+	font-family: Arial;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.inside {
+	justify-content: space-around;
+	margin: 27px;
+	background-color: white;
+	border: 3px solid #00a94f;
+	box-sizing: border-box;
+	width: 450px;
+}
+
+.details {
+	padding: 20px;
+	width: 100%;
+	color: #000066;
+}
+
+.button {
+    background: #00a94f;
+	border: 1px solid #00a94f;
+	color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #000066;
+	border: 1px solid #000066;
+}

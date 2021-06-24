@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title> Patient Login </title>
+        <link rel="stylesheet" type="text/css" href="Patient-Login.css"> </link>
+        <script type="text/javascript" src="Patient-Login.js"> </script>
+    </head>
+    <body topmargin="0" leftmargin="0">
+        <header>
+            <img src="Logo.png" width="289" height="102" class="logo">
+            <div class="dropdown0">
+                <button class="dropbtn0"> Contact Us &NoBreak; &#9660; </button>
+                <div class="dropdown-content-0">
+                    <a href="Contact.html"> Contact Details </a>
+                    <a href="Query.html"> Post a Query </a>
+                </div>
+            </div>
+            <div class="dropdown1">
+                <button class="dropbtn1"> Register &NoBreak; &#9660; </button>
+                <div class="dropdown-content-1">
+                    <a href="Doctor-Register.html"> Doctor Registration </a>
+                    <a href="Patient-Register.html"> Patient Registration </a>
+                </div>
+            </div>
+            <div class="dropdown2">
+                <button class="dropbtn2"> Login &NoBreak; &#9660; </button>
+                <div class="dropdown-content-2">
+                    <a href="Doctor-Login.html"> Doctor Login </a>
+                    <a href="Patient-Login.html"> Patient Login </a>
+                </div>
+			</div>
+			<a href="About.html"> <button class="home"> About Us </button> </a>
+            <a href="Home.html"> <button class="home"> Home </button> </a>
+        </header>
+        <form method="post" action="PatientLogin" align="center" onsubmit="return validate();">
+			<table width='344px' align='center' class='head'>
+				<tr align='center'>
+					<td> <h1> <u> Patient Login </u> </h1> </td>
+				</tr>
+				<table align='center' width='344px'>
+                    <tr>
+						<td align="center"> <input type='text' name='pid' size="41" id="pid" placeholder="Patient ID" class="pid" required > </td>
+					</tr>
+					<tr> 
+						<td> <br> </td> 
+					</tr>
+					<tr>
+						<td align="center"> <input type='text' name='uname' size="41" id="uname" placeholder="Username" class="uname" required> </td>
+					</tr>
+					<tr> 
+						<td> <br> </td> 
+					</tr>
+					<tr>
+						<td align="center"> <input type='password' name='pword' size="41" id="pword" placeholder="Password" class="pword" required> </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="forgot"> <a href="#"> Forgot Password? </a> </td>
+                    </tr>
+					<table width='344px' align='center' class='tail'>
+						<tr>
+							<td align='center'> <input type='submit' name='login' value="Login" class='button'></td>
+						</tr>
+						<tr class="data">
+							<td align="center"> 
+								<br> Not Registered Yet? <a href="Patient-Register.html"> Register Here </a>
+							</td>
+						</tr>
+					</table>
+				</table>
+			</table>
+		</form>
+		<footer>
+            <table align="center" cellspacing="10" cellpadding="5">
+                <tr>
+                    <th width="250"> Quick Link </th>
+                    <th width="300"> Disease and Conditions </th>
+                    <th width="150"> Stay Connected </th>
+                </tr>
+                <tr>
+                    <td> <a href="About.html"> <button class="footer_links"> About Us </button> </a> </td>
+                    <td> <a href="HF.html"> <button class="footer_links"> Osteoporosis </button> </a> </td>
+                    <td rowspan="2"> 
+                        <a href="https://twitter.com/fortis_hospital"><img src="twitter.png" width="50" height="50"></a> &nbsp;
+                        <a href="https://www.facebook.com/FEOKHLA/"><img src="facebook.png" width="40" height="40"></a> &nbsp;
+                        <a href="https://www.youtube.com/user/fortishealthcare"><img src="youtube.png" width="60" height="42"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <a href="Contact.html"> <button class="footer_links"> Contact Us </button> </a> </td>
+                    <td> <a href="HBP.html"> <button class="footer_links"> High Blood Pressure </button> </a> </td>
+                </tr>
+                <tr>
+                    <td> <a href="Query.html"> <button class="footer_links"> Post a Query </button> </a> </td>
+                    <td> <a href="DBTS.html"> <button class="footer_links"> Diabetes </button> </a> </td>
+                    <td rowspan="2" align="center">
+                        <img src="bottom.png" width="150" height="60">
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp; </td>
+                    <td> <a href="View.html"> <button class="footer_links"> View All </button> </a> </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>

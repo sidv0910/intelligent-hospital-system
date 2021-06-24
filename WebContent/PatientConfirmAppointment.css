@@ -1,0 +1,101 @@
+.outside {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1480px;
+	font-family: Arial;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.inside {
+	justify-content: space-around;
+	margin: 27px;
+	background-color: white;
+	border: 3px solid #00a94f;
+	box-sizing: border-box;
+	width: 450px;
+}
+
+.details {
+	padding: 20px;
+	width: 100%;
+	color: #000066;
+}
+
+.button {
+    background: #00a94f;
+	border: 1px solid #00a94f;
+	color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #000066;
+	border: 1px solid #000066;
+}
+
+.inside_2 {
+	justify-content: space-around;
+	margin: 27px;
+	background-color: white;
+	border: 3px solid #00a94f;
+	box-sizing: border-box;
+	width: 900px;
+}
+
+.details_2 {
+	width: 900px;
+	color: #000066;
+	padding: 30px;
+	line-height: 28px;
+}
+
+.heading {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.sub-heading {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+input {
+	padding-left: 10;
+    height: 38px;
+    border: 2px solid #000066;
+}
+
+select {
+	padding-left: 10;
+    height: 38px;
+    border: 2px solid #000066;
+}
+
+.inc {
+	width: 200px;
+}
+
+.button {
+    background: #00a94f;
+	border: 1px solid #00a94f;
+	color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #000066;
+	border: 1px solid #000066;
+}

@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title> Post a Query </title>
+        <link rel="stylesheet" type="text/css" href="Query.css"> </link>
+        <script type="text/javascript" src="Query.js"> </script>
+    </head>
+    <body topmargin="0" leftmargin="0">
+        <header>
+            <img src="Logo.png" width="289" height="102" class="logo">
+            <div class="dropdown0">
+                <button class="dropbtn0"> Contact Us &NoBreak; &#9660; </button>
+                <div class="dropdown-content-0">
+                    <a href="Contact.html"> Contact Details </a>
+                    <a href="Query.html"> Post a Query </a>
+                </div>
+            </div>
+            <div class="dropdown1">
+                <button class="dropbtn1"> Register &NoBreak; &#9660; </button>
+                <div class="dropdown-content-1">
+                    <a href="Doctor-Register.html"> Doctor Registration </a>
+                    <a href="Patient-Register.html"> Patient Registration </a>
+                </div>
+            </div>
+            <div class="dropdown2">
+                <button class="dropbtn2"> Login &NoBreak; &#9660; </button>
+                <div class="dropdown-content-2">
+                    <a href="Doctor-Login.html"> Doctor Login </a>
+                    <a href="Patient-Login.html"> Patient Login </a>
+                </div>
+            </div>
+            <a href="About.html"> <button class="home"> About Us </button> </a>
+            <a href="Home.html"> <button class="home"> Home </button> </a>
+        </header>
+        <form name="form" method="post" action="" align="center" onsubmit="return validate();">
+            <table width='650px' align='center' class='head'>
+                <tr align='center'>
+                    <td> <h1> <u> Post a Query </u> </h1> </td>
+                </tr>
+                <table width='650px' align='center'>
+                    <tr>
+                        <td align="center"> <input type='text' name='name' id='name' size="40" placeholder="Name" class="constant" required> </td>
+                        <td align="center"> <input type='email' name='email' id='email' size="40" placeholder="Email" class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center"> <input type='text' name='mobile' id='mobile' size="40" placeholder="Contact No." class="constant" required> </td>
+                        <td align="center"> <input type='text' name='subject' id='subject' size="40" placeholder="Subject" class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td> &nbsp; Enter Message : </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"> <textarea rows="3" cols="90" name="message" id="message" required ></textarea> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <table width='650px' align='center' class='tail'>
+                        <tr>
+                            <td align='center'> <input type='submit' name='submit' value="Submit" class='button'></td>
+                        </tr>
+                    </table>
+                </table>
+            </table>
+        </form>
+        <footer>
+            <table align="center" cellspacing="10" cellpadding="5">
+                <tr>
+                    <th width="250"> Quick Link </th>
+                    <th width="300"> Disease and Conditions </th>
+                    <th width="150"> Stay Connected </th>
+                </tr>
+                <tr>
+                    <td> <a href="About.html"> <button class="footer_links"> About Us </button> </a> </td>
+                    <td> <a href="HF.html"> <button class="footer_links"> Osteoporosis </button> </a> </td>
+                    <td rowspan="2"> 
+                        <a href="https://twitter.com/fortis_hospital"><img src="twitter.png" width="50" height="50"></a> &nbsp;
+                        <a href="https://www.facebook.com/FEOKHLA/"><img src="facebook.png" width="40" height="40"></a> &nbsp;
+                        <a href="https://www.youtube.com/user/fortishealthcare"><img src="youtube.png" width="60" height="42"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <a href="Contact.html"> <button class="footer_links"> Contact Us </button> </a> </td>
+                    <td> <a href="HBP.html"> <button class="footer_links"> High Blood Pressure </button> </a> </td>
+                </tr>
+                <tr>
+                    <td> <a href="Query.html"> <button class="footer_links"> Post a Query </button> </a> </td>
+                    <td> <a href="DBTS.html"> <button class="footer_links"> Diabetes </button> </a> </td>
+                    <td rowspan="2" align="center">
+                        <img src="bottom.png" width="150" height="60">
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp; </td>
+                    <td> <a href="View.html"> <button class="footer_links"> View All </button> </a> </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>

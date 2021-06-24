@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title> Doctor Registration </title>
+        <link rel="stylesheet" type="text/css" href="Doctor-Register.css"> </link>
+        <script type="text/javascript" src="Doctor-Register.js"> </script>
+    </head>
+    <body topmargin="0" leftmargin="0">
+        <header>
+            <img src="Logo.png" width="289" height="102" class="logo">
+            <div class="dropdown0">
+                <button class="dropbtn0"> Contact Us &NoBreak; &#9660; </button>
+                <div class="dropdown-content-0">
+                    <a href="Contact.html"> Contact Details </a>
+                    <a href="Query.html"> Post a Query </a>
+                </div>
+            </div>
+            <div class="dropdown1">
+                <button class="dropbtn1"> Register &NoBreak; &#9660; </button>
+                <div class="dropdown-content-1">
+                    <a href="Doctor-Register.html"> Doctor Registration </a>
+                    <a href="Patient-Register.html"> Patient Registration </a>
+                </div>
+            </div>
+            <div class="dropdown2">
+                <button class="dropbtn2"> Login &NoBreak; &#9660; </button>
+                <div class="dropdown-content-2">
+                    <a href="Doctor-Login.html"> Doctor Login </a>
+                    <a href="Patient-Login.html"> Patient Login </a>
+                </div>
+            </div>
+            <a href="About.html"> <button class="home"> About Us </button> </a>
+            <a href="Home.html"> <button class="home"> Home </button> </a>
+        </header>
+        <form name="form" method="post" action="DoctorRegister" align="center" onsubmit="return validate();">
+            <table width='958px' align='center' class='head'>
+                <tr align='center'>
+                    <td> <h1> <u> Doctor Registration </u> </h1> </td>
+                </tr>
+                <table width='958px' align='center' cellpadding="3">
+                    <tr>
+                        <td align="center" colspan="50%"> <input type='text' name='uname' id='uname' size="64" placeholder="Username" class="constant" required> </td>
+                        <td align="center" colspan="50%"> <input type='email' name='email' id='email' size="64" placeholder="Email" class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="50%"> <input type='password' name='pword' id='pword' size="64" placeholder="Password" class="constant" required> </td>
+                        <td align="center" colspan="50%"> <input type='password' name='repword' id="repword" size="64" placeholder="Confirm Password" class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align='center' colspan="98%" class="sub-head"> <h2> Personal Information </h2> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align='center' colspan="98%"> 
+                            <p> <img src="Profile.jpg" id="output" width="200" /> </p>
+                            <p> <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+                            <p> <label for="file" class="upload"> Upload Image </label> </p>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="100%"> <input type="text" name="path" id="path" size="136" placeholder="Local Path of Photo" class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="33%"> <input type='text' name='fname' id='fname' size="40" placeholder="First Name" class="constant" required> </td>
+                        <td align="center" colspan="33%"> <input type='text' name='mname' id='mname' size="40" placeholder="Middle Name" class="constant"> </td>
+                        <td align='center' colspan="33%"> <input type="text" name='lname' id='lname' size="40" placeholder="Last Name" class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="33%"> Date of Birth : <input type="date" name='dob' id='dob' class="date" required> </td>
+                        <td align="center" colspan="33%"> <input type='number' name='age' id='age' size="40" placeholder="Age" class="age" required> </td>
+                        <td align="center" colspan="33%"> <input type='text' name='pob' id='pob' size="40" placeholder="Place of Birth" class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="50%">
+                            Gender :
+                            <input type="radio" name="gender" value="Male" required> Male 
+                            <input type="radio" name="gender" value="Female"> Female
+                            <input type="radio" name="gender" value="Other"> Other 
+                        </td>
+                        <td align="center" colspan="50%">
+                            <select name="legal" class="legal" required> 
+                                <option value="" disabled selected hidden> Are you legally entitled to work as a doctor in this hospital ?  </option>
+                                <option value="Yes"> Yes </option>
+                                <option value="No"> No </option>
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="33%"> 
+                            Marital Status :
+                            <input type="radio" name="marital" value="Married" required> Married 
+                            <input type="radio" name="marital" value="Unmarried"> Unmarried
+                        </td>
+                        <td align="center" colspan="33%"> <input type='number' name='noc' id='noc' size="40" placeholder="Number of Children" class="noc" required> </td>
+                        <td align="center" colspan="33%"> <input type='text' name='citizen' id='citizen' size="40" placeholder="Citizenship" class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="66%"> <input type='text' name='address' size="88" placeholder="Address" class="constant" required> </td>
+                        <td align="center" colspan="33%"> <input type='text' name='mobile' id='mobile' size="40" placeholder="Contact No." class="constant" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="33%"> <input type='text' name='position' id='position' size="40" placeholder="Position Desired" class="constant" required> </td>
+                        <td align="center" colspan="33%"> <input type="number" name='salary' id='salary' size="40" placeholder="Salary Desired" class="salary" required> </td>
+                        <td align='center' colspan="33%"> 
+                            <select name="time" class="time" required> 
+                                <option value="" disabled selected hidden> Part-Time / Full-Time  </option>
+                                <option value="Part-Time"> Part-Time </option>
+                                <option value="Full-Time"> Full-Time </option>
+                            </select>  
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td align='center' colspan="98%" class="sub-head"> <h2> Education </h2> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td colspan="98%"> High School : </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="66%"> <input type='text' name='college1' id='college1' size="88" placeholder="Name of the School" class="constant" required> </td>
+                        <td align="center" colspan="33%"> <input type='text' name='location1' id='location1' size="40" placeholder="Location" class="constant" required> </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="33%"> <input type='text' name='degree1' id='degree1' size="40" placeholder="Degree" class="constant" required> </td>
+                        <td align="center" colspan="33%"> From : <input type="date" name='from1' id='from1' class="date" required> </td>
+                        <td align="center" colspan="33%"> To : <input type="date" name='to1' id='to1' class="date" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td colspan="98%"> College / University : </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="66%"> <input type='text' name='college2' id='college2' size="88" placeholder="Name of the College / University" class="constant" required> </td>
+                        <td align="center" colspan="33%"> <input type='text' name='location2' id='location2' size="40" placeholder="Location" class="constant" required> </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="33%"> <input type='text' name='degree2' id='degree2' size="40" placeholder="Degree" class="constant" required> </td>
+                        <td align="center" colspan="33%"> From : <input type="date" name='from2' id='from2' class="date" required> </td>
+                        <td align="center" colspan="33%"> To : <input type="date" name='to2' id='to2' class="date" required> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <tr>
+                        <td colspan="98%"> Post Graduation : </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="66%"> <input type='text' name='college3' id='college3' size="88" placeholder="Name of the Institute" class="constant"> </td>
+                        <td align="center" colspan="33%"> <input type='text' name='location3' id='location3' size="40" placeholder="Location" class="constant"> </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="33%"> <input type='text' name='degree3' id='degree3' size="40" placeholder="Degree" class="constant"> </td>
+                        <td align="center" colspan="33%"> From : <input type="date" name='from3' id='from3' class="date"> </td>
+                        <td align="center" colspan="33%"> To : <input type="date" name='to3' id='to3' class="date"> </td>
+                    </tr>
+                    <tr> 
+                        <td> <br> </td> 
+                    </tr>
+                    <table width='958px' align='center' class='tail'>
+                        <tr>
+                            <td align='center'> <input type='submit' name='login' value="Register" class='button'></td>
+                        </tr>
+                    </table>
+                </table>
+            </table>
+        </form>
+        <footer>
+            <table align="center" cellspacing="10" cellpadding="5">
+                <tr>
+                    <th width="250"> Quick Link </th>
+                    <th width="300"> Disease and Conditions </th>
+                    <th width="150"> Stay Connected </th>
+                </tr>
+                <tr>
+                    <td> <a href="About.html"> <button class="footer_links"> About Us </button> </a> </td>
+                    <td> <a href="HF.html"> <button class="footer_links"> Osteoporosis </button> </a> </td>
+                    <td rowspan="2"> 
+                        <a href="https://twitter.com/fortis_hospital"><img src="twitter.png" width="50" height="50"></a> &nbsp;
+                        <a href="https://www.facebook.com/FEOKHLA/"><img src="facebook.png" width="40" height="40"></a> &nbsp;
+                        <a href="https://www.youtube.com/user/fortishealthcare"><img src="youtube.png" width="60" height="42"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <a href="Contact.html"> <button class="footer_links"> Contact Us </button> </a> </td>
+                    <td> <a href="HBP.html"> <button class="footer_links"> High Blood Pressure </button> </a> </td>
+                </tr>
+                <tr>
+                    <td> <a href="Query.html"> <button class="footer_links"> Post a Query </button> </a> </td>
+                    <td> <a href="DBTS.html"> <button class="footer_links"> Diabetes </button> </a> </td>
+                    <td rowspan="2" align="center">
+                        <img src="bottom.png" width="150" height="60">
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp; </td>
+                    <td> <a href="View.html"> <button class="footer_links"> View All </button> </a> </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>

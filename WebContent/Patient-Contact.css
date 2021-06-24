@@ -1,0 +1,17 @@
+.contact {
+    background-color: white;
+    margin: 50px;
+    margin-left : 80px;
+    font-family: Arial;
+    padding: 30px;
+}
+
+.contact h1 {
+    font-size: 50px;
+    color: #00a94f;
+}
+
+.contact td {
+    font-size: 25px;
+    color: #333333;
+}

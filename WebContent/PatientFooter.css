@@ -1,0 +1,38 @@
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00a94f;
+    color: white;
+    text-align: center;
+}
+
+footer table {
+    background-color: #00a94f;
+    padding: 50px;
+    font-family: Arial;
+    color: white;
+}
+
+footer th {
+    text-align: left;
+    font-size: 19px;
+}
+
+footer img {
+    vertical-align: middle;
+}
+
+.footer_links {
+    background-color: #00a94f;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.footer_links:hover {
+    background-color: white;
+    color: #00a94f;
+}
